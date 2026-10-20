@@ -1,0 +1,48 @@
+Exercise 1 
+
+1)  Variables de décisions : les n (nombre de bits)
+    un gène : un bit 
+
+2)  Rappel : 
+            Chromosome : Une composition de plusieurs gènes.
+    
+    réponse : le chromosome est le nombre décimal en lui même.
+3) espace de recherche : 2^n, 2^16 = 65 536
+
+4) f = somme bi * 2^i
+
+5) la valeur maximale sera la valeur optimale soit 35 536 - 1 = 35 535.
+
+Exercice 2
+
+1) 
+$ java Main.java
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+
+
+3) 
+
+
+4) 
+TypeSelection selection = TypeSelection.ALEATOIRE;  // création d'un type de selection dans la populartion (aléatoire)
+TypeCroisement croisement = TypeCroisement.UN_POINT;// sélection d'un croisement (1 point)
+
+5) 
+$ ./sc.sh 
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+Meilleure solution : 1111111111110111  f=65527.0
+Optimum théorique   : 65535
+
+Exercice 3 
+
+1) fonction selectionner()
+
+2) 
