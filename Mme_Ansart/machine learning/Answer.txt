@@ -1,0 +1,65 @@
+I. JUPYTER, NOTEBOOK ET PYTHON
+
+1) /
+
+2) 
+    a) Il existe les cellules de code, les cellules de textes et
+       les cellules d'en-tête de section
+    b) méthode d'éxecution : 
+                - Cliquer sur la bouton d'execution.
+                - Clique droit -> "Executer la cellule selectionnée"
+                - Ctrl + Entrée
+    c) Ctrl + F8
+
+    d) /
+
+    e) La valeur de a est sauvegardé en mémoire pour la prochaine execution.
+
+    f) La valeur de a retourne à 1 initialement. Donc première execution on a a =2; b = 2; a+b = 4
+
+3) /
+
+II. FAMILIARISATION AVEC PANDAS
+
+Lecture des données : 
+
+    nombre de variables : 30
+    nombre d'exemples : 569
+    nombre de résultats possibles : 2
+    Type de problème ML : guidée, classification binaire.
+
+deux booléens que l'on donne en paramètre de sklearn.datasets.load_breast_cancer()
+    as_frame : permet d'avoir ou non un affichage formalisé pandas (valeurs crues ou tableau)
+    return_X_y : activé, il retroune uniquement data et target. Sinon, retourne tout le tableau
+
+
+Comparaisono d'affichage : 
+    - nous retrouvons le format pandas car nous avons activé la frame
+    - Print récupère uniquement les valeurs et ignore le format pandas
+    - head() nous permet de tromquer notre tableau.
+
+Avec l'attribut "shape" de notre matrice de donnée, on récupère bien la taille de tableau 
+qui est de 569x30 soit 569 individus et 30 caractéristiques.
+
+Avec l'attribut "columns" de X, on récupère les noms de colonnes.
+
+.loc pour accéder à lignes/colonnes d'une dataframe. Exemple : X.loc[2, 'mean radius'] ligne d'id 2 d'identifiant radius
+
+":" pour sélectionnenr toutes les lignes/colonnes. Exemple : df.loc[:, 'mean radius'] toute la colonne mean radius.
+
+
+
+
+y.value_counts(normalize = True) pour récupérer le nombre d'occurence dans une variable. On obtient en normalisant (pour des pourcentages)
+    proportion
+target 	
+1    	0.627417 pour la tumeur bégnine 
+0 	    0.372583 pour la tumeur maligne
+
+
+
+Concernant X.mean, cela permet de retourner la moyenne de chaque mesures de notre matrice. Le paramètre "axis" permet de selectionner le mode de moyenne : 
+    - pour une valeur de 0, la moyenne sur les lignes est faite, on a donc une moyenne sur les mesures
+    - pour une valeur de 1, la moyenne se fait sur les colonnes, dans notre cas, elle n'a pas beaucoup de sens.
+
+
